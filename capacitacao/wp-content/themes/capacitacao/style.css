@@ -1,0 +1,575 @@
+/*
+  Theme Name: Capacitação byron parte 2
+  Author: Rafael Greca
+  Description: Theme for my byron's capacitation
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/license/glp-2.0.html
+  Tags: capacitation, byron
+  Text Domain: capacitation
+
+*/
+body{
+  margin: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, p{
+  font-family: 'Lato', sans-serif;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+.wp-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 25px auto;
+}
+.header{
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+}
+
+.header-title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header-title h1{
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.email, .developed{
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+}
+
+/** MENU SOCIALS **/
+.social-info{
+  text-align: center;
+  padding-right: 65px;
+}
+
+.social-text{
+  display: none;
+}
+
+.social-info ul{
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-info ul li{
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 15px;
+  font-size: 40px;
+}
+
+.social-info li a[href*="facebook.com/grekoso"]:before{
+  font-family: 'FontAwesome';
+  content:'\f09a';
+  color: black;
+  -webkit-font-smoothing: antialiazed;
+}
+
+.social-info li a[href*="github.com/rafaelgreca"]:before{
+  font-family: 'FontAwesome';
+  content:'\f09b';
+  color: black;
+  -webkit-font-smoothing: antialiazed;
+}
+
+.social-info li a[href*="linkedin.com/in/rafael-greca-638337168/"]:before{
+  font-family: 'FontAwesome';
+  content:'\f0e1';
+  color: black;
+  -webkit-font-smoothing: antialiazed;
+}
+
+.social-info li a:hover{
+  color: gray;
+  text-decoration: none;
+}
+
+/** MENU HEADER **/
+
+.menu-options{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.menu-nav ul{
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.menu-nav ul li{
+  display: table-cell;
+}
+
+.menu-nav ul li a{
+  text-align: center;
+  padding: 23px 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+  color: black;
+}
+
+.menu-header {
+  border-bottom: 2px solid black;
+}
+
+.menu-nav ul li a:hover{
+  border-bottom: 6px solid black;
+}
+
+/*ABOUT*/
+
+.content{
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 1120px;
+  margin: 0;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+/*
+.content::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(255,255,255,0.25);
+}
+*/
+
+.content-components .content-title{
+  color: #ffffff;
+  vertical-align: top;
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.content-components .content-text{
+  text-align: center;
+  color: black;
+  padding: 50px;
+  margin: 0 90px;
+  position: relative;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*MENU FOOTER*/
+
+footer{
+  margin: 0;
+  text-align: center;
+}
+
+footer ul{
+  list-style: none;
+  padding: 10px 20px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer ul li a{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+footer ul li a:hover{
+  border: 4px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+/*FORM*/
+
+.title-form{
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-top: 14px;
+}
+
+.forms{
+  padding-top: 15px;
+  position: relative;
+  margin: 10px 90px;
+}
+
+.forms p{
+  margin: 9px auto;
+  margin-left: 230px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.forms .input{
+  border: 2px solid #000000;
+  margin-bottom: 12px;
+
+}
+
+.field{
+  margin-bottom: 25px;
+}
+
+/*FRONT PAGE*/
+
+.content-front{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 430px;
+    display: table;
+}
+
+.content-components{
+  text-align: center;
+  color: #ffffff;
+}
+
+.content-front-text{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 23px;
+  margin: 20px 95px;
+  padding: 12px 0px;
+  letter-spacing: 1px;
+}
+
+.button{
+  background-color: black;
+  font-size: 16px;
+  width: auto;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 15px 80px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.button:hover{
+  text-decoration: none;
+  color: gray;
+}
+
+.form-front{
+  padding-top: 15px;
+  position: relative;
+}
+
+.form-front .field{
+  text-align: center;
+}
+
+.form-front p{
+  margin: 9px auto;
+  margin-left: 390px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.form-front .button{
+  text-align: center;
+  float: none;
+  margin-left: 435px;
+  margin-top: -30px;
+  margin-bottom: 28px;
+}
+
+.title-form{
+  padding-top: 10px;
+}
+
+#form p{
+  padding-right: 35px;
+}
+
+/*CAROUSEL*/
+
+.carousel{
+  text-align: center;
+  vertical-align: middle;
+  margin: 45px auto;
+}
+
+.carousel h1{
+  font-weight: 900;
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media only screen and (max-width: 810px){
+  .content-components .button{
+    margin-bottom: 35px;
+  }
+
+  .form-front p{
+    text-align: center;
+  }
+
+  .form-front .button{
+    text-align: center;
+  }
+
+  .forms p{
+    text-align: center;
+  }
+
+  .form-front p{
+    margin-left: -265px;
+  }
+
+  .form-front .button{
+    margin-left: 175px;
+  }
+
+  .email, .developed{
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .content-components .content-text{
+    margin-left: -13px;
+    margin-right: -50px;
+  }
+
+  .forms p{
+    margin-left: -2px;
+    margin-right: -21px;
+  }
+
+  footer{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .content-front .content-front-text{
+      font-size: 15px;
+      margin: 0px 55px;
+  }
+
+  .content-front .button{
+    font-size: 12px;
+    width: 260px;
+    margin-bottom: 20px;
+    margin-right: -40px;
+  }
+
+  .carousel .carousel-inner{
+    width: 350px;
+  }
+
+  .form-front .input{
+    width: 250px;
+  }
+
+  .form-front .text{
+    padding-left: -90px;
+  }
+
+  .form-front .button{
+    text-align: center;
+    margin-left: -45px;
+    width: 250px;
+  }
+
+  .form-front .input, .form-front p{
+    margin-right: -60px;
+  }
+
+  .form-front p{
+    margin-right: -70px;
+  }
+
+  .content-components .content-title{
+    text-align: center;
+    width: 100%;
+    margin-left: -10px;
+  }
+
+  .content-components .content-text{
+    margin: 5px auto;
+  }
+
+  .content-components .button{
+    margin-left: -96px;
+    width: 280px;
+    text-align: center;
+    padding: 10px 7px;
+  }
+
+  .content-components h1{
+    width: 100%;
+    margin-left: -55px;
+  }
+
+  .content-components .input{
+    width: 250px;
+  }
+
+  .forms .input, .forms p{
+    margin-left: -110px;
+  }
+
+  .about .content-title{
+    text-align: center;
+    padding-left: 65px;
+  }
+
+  .about .content-text{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .email, .developed{
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  footer{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .content-components .button{
+    margin-bottom: 35px;
+  }
+
+  .form-front p{
+    text-align: center;
+  }
+
+  .form-front .button{
+    text-align: center;
+  }
+
+  .forms p{
+    text-align: center;
+  }
+
+  .form-front p{
+    margin-left: -265px;
+  }
+
+  .form-front .button{
+    margin-left: 228px;
+  }
+
+  .email, .developed{
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .content-components .content-text{
+    margin-left: -13px;
+    margin-right: -50px;
+  }
+
+  .forms p{
+    margin-left: -2px;
+    margin-right: -21px;
+  }
+
+  footer{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  .content-components .button{
+    margin-bottom: 35px;
+  }
+
+  .form-front p{
+    text-align: center;
+  }
+
+  .form-front .button{
+    text-align: center;
+  }
+
+  .forms p{
+    text-align: center;
+  }
+
+  .form-front p{
+    margin-left: -265px;
+  }
+
+  .form-front .button{
+    margin-left: 382px;
+  }
+
+  .email, .developed{
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .forms p{
+    margin-left: -2px;
+    margin-right: -21px;
+  }
+
+  footer{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1600px){
+  .form-front .button{
+    margin-left: 427px;
+  }
+}
